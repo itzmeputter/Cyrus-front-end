@@ -15,15 +15,7 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import cyrusLogo from "@assets/CyrusV.1Logo_1781971950289.jpg";
 
-// TEMP SIGNUP HOOK (Render-safe placeholder)
-const useSignup = () => {
-  return {
-    mutate: (data: any) => {
-      console.log("Signup not connected yet:", data);
-    },
-    isPending: false,
-  };
-};
+
 
 export default function Signup() {
   const [email, setEmail] = useState("");
