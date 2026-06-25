@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { useLocation, Link } from "wouter";
-import { useSignup } from "@workspace/api-client-react";
+const useSignup = () => {
+  return {
+    mutate: (data: any) => {
+      console.log("Signup not connected yet", data);
+    },
+    isPending: false,
+  };
+};
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
