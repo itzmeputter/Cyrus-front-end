@@ -34,17 +34,17 @@ export default function Signup() {
   const signupMutation = useSignup();
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    signupMutation.mutate({ email, password });
+  signupMutation.mutate({ email, password });
 
-    toast({
-      title: "Signup simulated",
-      description: "Backend not connected yet.",
-    });
+  toast({
+    title: "Signup simulated",
+    description: "Backend not connected yet.",
+  });
 
-    setLocation("/login");
-  };
+  setLocation("/login");
+};
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-background p-4">
